@@ -1,18 +1,4 @@
 
-    <li><a href="https://www.kathara.org">Official Website</a></li>
-    <li><a href="#what-is-it">What is it?</a></li>
-    <li><a href="#how-does-it-work">How does it work?</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#quick-example">Quick Example</a></li>
-    <li><a href="#publications-and-presentations">Publications</a></li>
-    <li><a href="#external-tools">External Tools</a></li>
-    <li><a href="#success-stories">Success Stories</a></li>
-    <li><a href="#join-us">Join Us</a></li>
-    <li><a href="https://github.com/KatharaFramework/Docker-Images">Docker Images and Dockerfiles</a></li>
-    <li><a href="https://github.com/KatharaFramework/Kathara-Labs">Examples and Tutorials</a></li>
-    <li><a href="https://github.com/KatharaFramework/Kathara-Labs/tree/main/tutorials/python-api">Python APIs</a></li>
-    <li><a href="https://www.kathara.org/man-pages/kathara.1.html">Man Pages</a></li>
-</ul>
 
 ## What is it?
 **Kathará** (from the Greek Καθαρά, _purely_) is a lightweight network emulation system based on Docker containers.
