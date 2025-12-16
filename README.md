@@ -1,16 +1,4 @@
-<p align="center">
-    <a href="https://www.kathara.org">
-        <img src="https://github.com/KatharaFramework/Kathara/wiki/logo_kathara_small.png" alt="Kathará" />
-    </a>
-</p>
-<p align="right">
-    <a href="https://github.com/KatharaFramework/Kathara/releases"><img src="https://img.shields.io/github/v/release/KatharaFramework/Kathara" /></a>
-    <a href="https://github.com/KatharaFramework/Kathara/releases"><img src="https://img.shields.io/github/release-date/KatharaFramework/Kathara" /></a>
-    <a href="https://github.com/KatharaFramework/Kathara/releases"><img src="https://img.shields.io/github/downloads/KatharaFramework/Kathara/total" /></a>
-    <a href="https://github.com/KatharaFramework/Kathara/stargazers"><img src="https://img.shields.io/github/stars/KatharaFramework/Kathara" /></a>
-    <a href="https://github.com/KatharaFramework/Kathara/blob/master/LICENSE"><img src="https://img.shields.io/github/license/KatharaFramework/Kathara" alt="License: GPL v3" target="_blank" /></a>
-</p>
-<ul>
+
     <li><a href="https://www.kathara.org">Official Website</a></li>
     <li><a href="#what-is-it">What is it?</a></li>
     <li><a href="#how-does-it-work">How does it work?</a></li>
