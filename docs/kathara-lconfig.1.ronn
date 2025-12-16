@@ -1,0 +1,60 @@
+m4_changequote()
+kathara-lconfig(1) -- Attach network interfaces to a running Kathara device of a Kathara network scenario
+=============================================
+
+## SYNOPSIS
+
+`kathara lconfig` [`-h`] [`-d` <DIRECTORY>] `-n` <DEVICE_NAME> (`--add` <CD[/MAC_ADDR]> [<CD[/MAC_ADDR]> ...] \| `--rm` <CD> [<CD> ...])
+
+## DESCRIPTION
+
+Manage the network interfaces of a running Kathara device in a network scenario. The affected device is identified by <DEVICE_NAME>, which is the name of the running device in the network scenario. 
+
+## OPTIONS
+
+* `-h`, `--help`:
+    Show a help message and exit.
+
+* `-d` <DIRECTORY>, `--directory` <DIRECTORY>:
+    Specify the folder containing the network scenario.
+
+    Manage the network interfaces of running devices in a Kathara network scenario that is located inside <DIRECTORY>.
+    If no `-d` option is provided, assume the network scenario is located in the current directory.
+
+* `-n` <DEVICE_NAME>, `--name` <DEVICE_NAME>:
+    Name of the device to configure.
+
+* `--add` <CD[/MAC_ADDR]> [<CD[/MAC_ADDR]> ...]:
+	Specify the collision domain to be connected to the device:
+    
+    `CD`: The name of the collision domain to which the specified interface must be connected. Note that the name of the collision domain must not contain spaces (" "), commas (",") and dots (".").
+    
+    `/MAC_ADDR`: An optional parameter to specify the MAC address of the interface (MAC address must be in the format `XX:XX:XX:XX:XX:XX`). If `MAC_ADDR` is not provided, Kathara will assign a random one. 
+    
+    Equip the device with an additional network interface attached to a (virtual) collision domain whose name is <CD>. 
+    The number of the resulting network interface is generated incrementing the number of the last network interface used by the device.
+
+* `--rm` <CD> [<CD> ...]:
+	Specify the collision domain to be disconnected from the device.
+
+    Disconnect the device from the collision domain whose name is <CD> and remove the corresponding interface.
+
+## EXAMPLES
+
+Connect `pc1` to collision domain `X` and `Y` (with random MAC addresses):
+    
+    kathara lconfig -d path/to/network_scenario -n pc1 --add X Y
+
+Connect `pc1` to collision domain `X` with the specified MAC address:
+    
+    kathara lconfig -d path/to/network_scenario -n pc1 --add X/00:00:00:00:00:01
+
+Disconnect `pc1` from collision domain `X` and remove the corresponding interface:
+    
+    kathara lconfig -d path/to/network_scenario -n pc1 --rm X
+
+m4_include(footer.txt)
+
+## SEE ALSO
+
+`kathara`(1), `kathara-lstart`(1), `kathara-lclean`(1)
