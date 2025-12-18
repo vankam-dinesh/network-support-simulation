@@ -6,7 +6,7 @@ It can be really helpful in showing interactive demos/lessons, testing productio
 
 Kathará is the spiritual successor of the notorious [Netkit](https://www.netkit.org/), hence it is cross-compatible, and inherits its language and features.
 
-## How does it work?      
+## How does it work?           
 
 Each network device is emulated by a container. 
 Virtual network devices are interconnected by virtual L2 LANs.
