@@ -8,7 +8,7 @@ Kathará is the spiritual successor of the notorious [Netkit](https://www.netkit
 
 ## How does it work?           
 
-Each network device is emulated by a container. 
+Each network device is emulated by a container.     
 Virtual network devices are interconnected by virtual L2 LANs.
 
 Each container can potentially run a different Docker image. Built-in images include **Quagga**, **FRRouting**, **Bind**, **P4**, **OpenVSwitch**, and more, but you can also use your own container images.
